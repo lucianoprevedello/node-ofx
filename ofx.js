@@ -96,7 +96,7 @@ const objToOfx = (obj) => {
         }
         return out += `${start}\n${objToOfx(item)}${end}\n`
     }
-    out += start + item + '\n';
+    out += start + item + end +'\n';
   });
 
   return out;
